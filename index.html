@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bike.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">About us </a></li>z
+
+        </ul>
+
+<div class="thumbnail">
+    <li><img src="./image1.png" onclick="big('image1.png');path('green');bg('black')"></li>
+    <li><img src="./image2.png" onclick="big('image2.png');path('yellow');bg('gray')"></li>
+    <li><img src="./image4.png" onclick="big('image4.png');path('red');bg('blue')"></li>
+
+
+</div>
+
+
+<div class="bigimage">
+    <img src="image1.png" class="big">
+</div>
+<div class="content">
+    <p>Let`s ride </p><br>
+    <h1>Don`t Fear Dying <br>&nbsp; Fear Not Living</h1><br>
+    <h5>For Bike Lovers & bike riders</h5>
+</div>
+    </div>
+    <a href="https://wa.me/+919566061581">hellow</a>
+
+    <script>
+        function big(img){
+            document.querySelector(".big").src=img
+        }
+        function path(color){
+          var path=  document.querySelector(".path");
+            path.style.background=color;
+
+        }
+        function  bg(bgcolor){
+            var back=document.querySelector(".container");
+            back.style.background=bgcolor;
+
+        }
+    </script>
+</body>
+</html>
